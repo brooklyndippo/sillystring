@@ -101,4 +101,19 @@ function makeHashTag(str) {
   return hashtags
 }
 
-makeHashTag("Amazing bongo drums for sale")
+// Challenge 10  isEmpty(str) - Returns true if the given string is empty or only whitespace.
+// White space includes: spaces, line returns, and tabs. These characters can be represented with:
+// \n (new line) \r (carrige return), \t (tab).
+function checkBlankChars(value) {
+  const blankChars = ['', ' ', '\n', '\r', '\t']
+  if (blankChars.includes(value)) {
+    return null
+  }
+  return value
+}
+
+function isEmpty(str) {
+  const strArray = str.split('')
+  const strArrayNoSpaces = strArray.filter(checkBlankChars)
+  return strArrayNoSpaces.length === 0
+}
