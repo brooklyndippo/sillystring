@@ -76,12 +76,12 @@ function snakeCase(str) {
 // Challenge 7  camelCase() Lowercases the first character of the first word.
 // Then uppercases the first character of all other words, and removes all spaces.
 function camelCase(str) {
-  let capitalWords = capitalizeWords(str)
-  let camelCase = capitalWords[0].toLowerCase()
-  camelCase += capitalWords.slice(1)
-  camelCase = camelCase.replaceAll(' ', '')
-  console.log(camelCase)
-  return camelCase
+  const capitalWords = capitalizeWords(str)
+  let camelCaseStr = capitalWords[0].toLowerCase()
+  camelCaseStr += capitalWords.slice(1)
+  camelCaseStr = camelCaseStr.replaceAll(' ', '')
+  console.log(camelCaseStr)
+  return camelCaseStr
 }
 
 // Challenge 8 - this method takes the first character of a string and move to the end of a string
