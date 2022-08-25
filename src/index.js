@@ -117,3 +117,15 @@ function isEmpty(str) {
   const strArrayNoSpaces = strArray.filter(checkBlankChars)
   return strArrayNoSpaces.length === 0
 }
+
+module.exports.capitalize = capitalize
+module.exports.capitalizeBracket = capitalizeBracket
+module.exports.allCaps = allCaps
+module.exports.capitalizeWords = capitalizeWords
+module.exports.removeExtraSpaces = removeExtraSpaces
+module.exports.kebabCase = kebabCase
+module.exports.snakeCase = snakeCase
+module.exports.camelCase = camelCase
+module.exports.shift = shift
+module.exports.makeHashTag = makeHashTag
+module.exports.isEmpty = isEmpty
