@@ -75,7 +75,6 @@ function snakeCase(str) {
 
 // Challenge 7  camelCase() Lowercases the first character of the first word.
 // Then uppercases the first character of all other words, and removes all spaces.
-
 function camelCase(str) {
   let capitalWords = capitalizeWords(str)
   let camelCase = capitalWords[0].toLowerCase()
@@ -85,4 +84,21 @@ function camelCase(str) {
   return camelCase
 }
 
-camelCase('Camel case')
+// Challenge 8 - this method takes the first character of a string and move to the end of a string
+// Advanced: Include an optional second parameter that sets the number of characters to shift.
+function shift(str, chars) {
+  const charsToShift = str.slice(0, chars)
+  const shiftedString = str.slice(chars) + charsToShift
+  return shiftedString
+}
+
+// Challenge 9 makeHashTag(str) - This function should convert the given string to a hash tag.
+// A hash tag begins with # and no spaces. Each word in the phrase begins with an uppercase letter.
+function makeHashTag(str) {
+  const wordsArray = str.toLowerCase().split(' ')
+  const hashtag = '#'
+  const hashtags = wordsArray.map((word) => hashtag.concat('', word))
+  return hashtags
+}
+
+makeHashTag("Amazing bongo drums for sale")
