@@ -1,5 +1,5 @@
 /* eslint-disable no-undef, semi  */
-const ss = require('../src/index');
+const ss = require('../src/index.ts');
 
 test('Sanity check', () => {
   expect(2 + 2).toBe(4)
