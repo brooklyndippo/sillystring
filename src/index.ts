@@ -60,7 +60,6 @@ function kebabCase(str: string): string {
   const singleSpace = removeExtraSpaces(str)
   const lowercase = singleSpace.toLowerCase()
   const kebabString = lowercase.replaceAll(' ', '-')
-  console.log(kebabString)
   return kebabString
 }
 
@@ -69,7 +68,6 @@ function kebabCase(str: string): string {
 function snakeCase(str: string): string {
   const kebabString = kebabCase(str)
   const snakeString = kebabString.replaceAll('-', '_')
-  console.log(snakeString)
   return snakeString
 }
 
@@ -80,7 +78,6 @@ function camelCase(str: string): string {
   let camelCaseStr = capitalWords[0].toLowerCase()
   camelCaseStr += capitalWords.slice(1)
   camelCaseStr = camelCaseStr.replaceAll(' ', '')
-  console.log(camelCaseStr)
   return camelCaseStr
 }
 

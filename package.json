@@ -1,6 +1,6 @@
 {
   "name": "sillystrings",
-  "version": "1.2.0",
+  "version": "1.2.1",
   "description": "Silly String is a Javascript library for manipulating strings.",
   "main": "src/index.js",
   "scripts": {
